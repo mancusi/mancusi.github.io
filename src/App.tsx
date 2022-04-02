@@ -93,7 +93,7 @@ const AboutMe = () => {
 
 const Skills = () => {
   return (
-    <div className="h-full text-center grid bg-zinc-800 text-white">
+    <div className="h-full text-center grid bg-zinc-800 text-white pb-4">
       <h1 className="text-2xl pt-8">Skills</h1>
       <SkillRow>
         <SkillCard skill={"Go"} />
@@ -104,9 +104,10 @@ const Skills = () => {
         <SkillCard skill={"MySQL"} />
         <SkillCard skill={"React"} />
         <SkillCard skill={"Kafka"} deviconClass={"apachekafka"} />
-        <SkillCard skill={"Bazel"} />
+        {/* <SkillCard skill={"Bazel"} /> */}
         <SkillCard skill={"Kubernetes"} />
         <SkillCard skill={"Docker"} />
+        <SkillCard skill={"Bash"} />
       </SkillRow>
     </div>
   )
