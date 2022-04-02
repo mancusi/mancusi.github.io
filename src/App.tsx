@@ -70,9 +70,9 @@ const AboutMe = () => {
   return (
     <div className={`h-full text-center ${backgroundAlt} pb-12 max-w-5xl mx-auto`}>
       <h1 className="text-2xl p-8">About Me</h1>
-      <div className="flex justify-evenly gap-12">
-        <img className={"h-80 pl-40"} src={imgUrl}></img>
-        <div className="mr-40 text-left max-w-2xl">
+      <div className="flex flex-col sm:flex-row justify-evenly gap-12 px-2">
+        <img className={"w-80 rounded mx-auto"} alt={"A picture of myself."} src={imgUrl}/>
+        <div className={"text-left max-w-2xl"}>
           <p>
             👋 I'm Justin Mancusi. I'm a full-stack software engineer who graduated in 2018 with
             bachelor's degrees in Computer Science and Mathematics from the University of Virginia.
