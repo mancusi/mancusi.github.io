@@ -77,8 +77,8 @@ const AboutMe = () => {
             👋 I'm Justin Mancusi. I'm a full-stack software engineer who graduated in 2018 with
             bachelor's degrees in Computer Science and Mathematics from the University of Virginia.
             I love solving scalability problems, hacking on new technologies, and building out great
-            tooling for other developers. I currently work at Yext on a number of full-stack web
-            apps mainly built with React, Go, and occaisionally Java.
+            tooling for other developers. I currently work at Yext on a number of web
+            apps and microservices mainly built with React, Go, and Java. 
           </p>
           <br />
           <p>
