@@ -82,8 +82,9 @@ const AboutMe = () => {
           </p>
           <br />
           <p>
-            When I'm not at work I like to ride my bike, enjoy a craft beer, and support the Hoos —
-            particularly in college basketball.
+            When I'm not at work I like to read about science and history, hike in Shenandoah
+            National Park, enjoy a craft beer, and support the Hoos — particularly in college
+            basketball.
           </p>
         </div>
       </div>
