@@ -1,5 +1,13 @@
-import imgUrl from "./me.jpg";
 import "./App.css";
+import me200 from "./images/me_200.webp"
+import me552 from "./images/me_552.webp"
+import me743 from "./images/me_743.webp"
+import me973 from "./images/me_973.webp"
+import me1034 from "./images/me_1034.webp"
+import me1172 from "./images/me_1172.webp"
+import me1328 from "./images/me_1328.webp"
+import me1397 from "./images/me_1397.webp"
+import me1400 from "./images/me_1400.webp"
 import '../node_modules/devicon/devicon.min.css';
 import { background, backgroundAlt } from "./theme.js";
 import { ReactNode, useEffect, useRef, useState } from "react";
@@ -66,19 +74,37 @@ const Header = () => {
   );
 };
 
+const meSrcSet = [
+  `${me200} 200w`,
+  `${me552} 552w`,
+  `${me743} 743w`,
+  `${me973} 973w`,
+  `${me1034} 1034w`,
+  `${me1172} 1172w`,
+  `${me1328} 1328w`,
+  `${me1397} 1397w`,
+  `${me1400} 1400w`
+];
+
 const AboutMe = () => {
   return (
     <div className={`h-full text-center ${backgroundAlt} pb-12 max-w-5xl mx-auto`}>
       <h1 className="text-2xl p-8">About Me</h1>
       <div className="flex flex-col sm:flex-row justify-evenly gap-12 px-2">
-        <img className={"w-80 rounded mx-auto"} alt={"A picture of myself."} src={imgUrl}/>
-        <div className={"text-left max-w-2xl"}>
+<img
+      className={"w-80 rounded mx-auto"}
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcSet={meSrcSet.join(",")}
+src="images/me_1400.webp"
+          alt={"A picture of myself."} 
+          />
+               <div className={"text-left max-w-2xl"}>
           <p>
             👋 I'm Justin Mancusi. I'm a full-stack software engineer who graduated in 2018 with
             bachelor's degrees in Computer Science and Mathematics from the University of Virginia.
             I love solving scalability problems, hacking on new technologies, and building out great
             tooling for other developers. I currently work at Yext on a number of web
-            apps and microservices mainly built with React, Go, and Java. 
+            apps and microservices mainly built with React, Go, and Java.
           </p>
           <br />
           <p>
@@ -144,9 +170,9 @@ const Footer = () => {
   return (
     <div className={`h-full bg-black text-white flex flex-column justify-center text-xl content-evenly pt-10 pb-10`}>
       <div className="flex w-40 justify-evenly">
-        <a href="https://www.linkedin.com/in/mancusi/" className="devicon-linkedin-plain" />
-        <a href="https://github.com/mancusi/" className="devicon-github-plain" />
-        <a href="http://twitter.com/justinmancusi" className="devicon-twitter-plain" />
+        <a href="https://www.linkedin.com/in/mancusi/" title={"A link to my LinkedIn profile."} className="devicon-linkedin-plain" />
+        <a href="https://github.com/mancusi/" title={"A link to my GitHub profile."} className="devicon-github-plain" />
+        <a href="http://twitter.com/justinmancusi" title={"A link to my Twitter profile."} className="devicon-twitter-plain" />
       </div>
     </div>
   )
