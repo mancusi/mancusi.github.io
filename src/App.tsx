@@ -179,26 +179,34 @@ const Experience = () => {
 
 const Footer = () => {
   return (
-    <div
-      className={`h-full bg-black text-white flex flex-column justify-center text-xl content-evenly pt-10 pb-10`}
-    >
-      <div className="flex w-40 justify-evenly">
-        <a
-          href="https://www.linkedin.com/in/mancusi/"
-          title={"A link to my LinkedIn profile."}
-          className="devicon-linkedin-plain"
-        />
-        <a
-          href="https://github.com/mancusi/"
-          title={"A link to my GitHub profile."}
-          className="devicon-github-plain"
-        />
-        <a
-          href="http://twitter.com/justinmancusi"
-          title={"A link to my Twitter profile."}
-          className="devicon-twitter-plain"
-        />
+    <>
+      <div
+        className={`h-full bg-black text-white flex flex-column justify-center text-xl content-evenly pt-10 pb-10`}
+      >
+        <div className="flex w-40 justify-evenly">
+          <a
+            href="https://www.linkedin.com/in/mancusi/"
+            title={"A link to my LinkedIn profile."}
+            className="devicon-linkedin-plain"
+          />
+          <a
+            href="https://github.com/mancusi/"
+            title={"A link to my GitHub profile."}
+            className="devicon-github-plain"
+          />
+          <a
+            href="http://twitter.com/justinmancusi"
+            title={"A link to my Twitter profile."}
+            className="devicon-twitter-plain"
+          />
+        </div>
       </div>
-    </div>
+      {/* verification on mastadon */}
+      <a
+        style={{ display: "none" }}
+        rel="me"
+        href="https://mastodon.social/@mancusi"
+      />
+    </>
   );
 };
